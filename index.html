@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Manager App</title>
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app">
+
+    <h2>📁 PDF Manager</h2>
+
+    <!-- Upload -->
+    <input type="file" id="pdfInput" accept="application/pdf" multiple>
+
+    <!-- Search -->
+    <input type="text" id="search" placeholder="PDF name search kare...">
+
+    <!-- Reset All -->
+    <button class="reset-btn" id="resetAll">🗑️ Reset All PDFs</button>
+
+    <!-- PDF List -->
+    <ul id="pdfList"></ul>
+
+    <div class="note">
+      PDF browser me hi save hoti hai (LocalStorage)
+    </div>
+
+  </div>
+
+  <!-- JS Link -->
+  <script src="script.js"></script>
+</body>
+</html>
